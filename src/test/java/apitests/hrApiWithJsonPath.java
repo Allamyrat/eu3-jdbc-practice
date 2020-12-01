@@ -52,7 +52,7 @@ public class hrApiWithJsonPath {
         System.out.println(firstNames2);
 
         //get me first name of who is making highest salary
-        String kingName = jsonPath.getString("items.min {it.salary}.first_name");
+        String kingName = jsonPath.getString("items.max {it.salary}.first_name");
         System.out.println("kingName = " + kingName);
 
 
